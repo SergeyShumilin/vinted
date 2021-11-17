@@ -1,0 +1,70 @@
+.photo {
+  width: 270px;
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.photo .centered {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 0.4;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.photo-caption {
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-overflow: ellipsis;
+}
+
+.photo-caption-text {
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.photo-caption-delimiter {
+  width: 50px;
+  height: 2px;
+  display: inline-block;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.photo-hint {
+  display: none;
+}
+
+.photo:hover .photo-hint {
+  display: block;
+}
+
+.photo .favourite-btn {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 30px 0 20px;
+  cursor: pointer;
+}

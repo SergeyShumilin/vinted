@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    width: 560px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .App {
+    width: 850px;
+  }
+}
